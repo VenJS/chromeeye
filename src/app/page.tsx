@@ -5,6 +5,7 @@ import Hero from "@/components/Hero/Hero";
 import Services from "@/components/Services/Services";
 import Portfolio from "@/components/Portfolio/Portfolio";
 import AgencyServices from "@/components/AgencyServices/AgencyServices";
+import GetStarted from '@/components/GetStarted/GetStarted';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <Services />
         <Portfolio />
         <AgencyServices />
+        <GetStarted />
     </div>
   );
 }

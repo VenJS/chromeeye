@@ -75,6 +75,7 @@ export interface PageData {
 export interface ButtonProps {
   href?: string;
   label?: string;
+  type?: "default" | "dark-gray";
 }
 
 export interface TypographyProps {

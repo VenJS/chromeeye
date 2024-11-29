@@ -4,8 +4,9 @@ import styles from "./Button.module.scss";
 import { ButtonProps } from "../../interfaces/interfaces";
 
 const Button = (props: ButtonProps) => {
+  const buttonClass = `${styles.button} ${props.type === "dark-gray" ? styles.darkGrayButton : ""}`;
   return (
-    <Link className={styles.button} href={props.href || "/"}>
+    <Link className={buttonClass} href={props.href || "/"}>
       {props.label || ""}
     </Link>
   );
