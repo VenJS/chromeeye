@@ -1,0 +1,48 @@
+$font-family-poppins: 'Poppins', sans-serif;
+
+$font-large-bold: (
+  font-family: $font-family-poppins,
+  font-size: 80px,
+  font-weight: 700,
+  line-height: 120px
+);
+
+$font-medium-regular: (
+  font-family: $font-family-poppins,
+  font-size: 50px,
+  font-weight: 400,
+  line-height: 75px
+);
+
+$font-medium-medium: (
+  font-family: $font-family-poppins,
+  font-size: 50px,
+  font-weight: 500,
+  line-height: 75px
+);
+
+$font-medium-semibold: (
+  font-family: $font-family-poppins,
+  font-size: 50px,
+  font-weight: 600,
+  line-height: 75px
+);
+
+$font-medium-bold: (
+  font-family: $font-family-poppins,
+  font-size: 50px,
+  font-weight: 700,
+  line-height: 75px
+);
+
+$font-small-bold: (
+    font-family: $font-family-poppins,
+    font-size: 20px,
+    line-height: 30px,
+);
+
+@mixin apply-font($font-map) {
+    @each $property, $value in $font-map {
+      #{$property}: #{$value};
+    }
+  }
