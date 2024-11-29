@@ -83,7 +83,8 @@ export interface TypographyProps {
     | "medium-title"
     | "small-title"
     | "description"
-    | "small-description";
+    | "small-description"
+    | "description-bold";
   children: React.ReactNode;
   className?: string;
 }

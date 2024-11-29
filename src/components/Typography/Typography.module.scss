@@ -15,6 +15,10 @@
   .description {
     @include apply-font($font-section-description);
   }
+
+  .description-bold {
+    @include apply-font($font-section-description-bold);
+  }
   
   .small-description {
     @include apply-font($font-section-small-description);

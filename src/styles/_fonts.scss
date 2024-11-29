@@ -77,6 +77,13 @@ $font-section-description: (
     line-height: 24px,
 );
 
+$font-section-description-bold: (
+    font-family: $font-family-poppins,
+    font-size: 18px,
+    line-height: 24px,
+    font-weight: 500
+);
+
 $font-section-small-description: (
     font-family: $font-family-poppins,
     font-size: 16px,

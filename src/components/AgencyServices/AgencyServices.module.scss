@@ -1,0 +1,106 @@
+@import "../../styles/variables.scss";
+
+.agencyServices {
+  max-width: 1280px;
+  width: 100%;
+  padding: 86px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 84px;
+
+  > span:first-child {
+    width: fit-content;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 86px;
+      width: 100%;
+      height: 2px;
+      background-color: $light-blue;
+    }
+  }
+
+  .content {
+    width: 100%;
+    position: relative;
+
+
+    .accordionItem {
+      border-top: 1px solid $light-gray;
+      max-width: 520px;
+      width: 100%;
+      margin: 0;
+      overflow: hidden;
+      border-radius: 4px;
+
+      &:last-child {
+        border-bottom: 1px solid $light-gray;
+      }
+
+      .accordionItemContainer {
+
+        .image {
+          position: absolute;
+          right: 0;
+          top: 0;
+          
+
+          img {
+            width: 500px;
+            height: 372px;
+          }
+        }
+      }
+    }
+
+    .accordionHeader {
+      background-color: $white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      font-weight: bold;
+
+      &.active {
+        background-color: $light-gray;
+
+        > span:first-child {
+          color: $blue;
+        }
+      }
+
+      .icon {
+        transition: transform 0.3s ease;
+        img {
+          width: 32px;
+          height: 32px;
+        }
+      }
+
+      .rotate {
+        transform: rotate(360deg);
+      }
+    }
+
+    .accordionContent {
+      padding: 15px 20px;
+      background-color: $light-gray;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        max-height: 0;
+      }
+      to {
+        opacity: 1;
+        max-height: 200px;
+      }
+    }
+  }
+}
