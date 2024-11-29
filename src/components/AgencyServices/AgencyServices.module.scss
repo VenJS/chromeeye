@@ -3,11 +3,12 @@
 .agencyServices {
   max-width: 1280px;
   width: 100%;
-  padding: 86px;
+  padding: 86px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 84px;
+  min-height: 520px;
 
   > span:first-child {
     width: fit-content;
@@ -27,7 +28,6 @@
     width: 100%;
     position: relative;
 
-
     .accordionItem {
       border-top: 1px solid $light-gray;
       max-width: 520px;
@@ -41,12 +41,10 @@
       }
 
       .accordionItemContainer {
-
         .image {
           position: absolute;
           right: 0;
           top: 0;
-          
 
           img {
             width: 500px;

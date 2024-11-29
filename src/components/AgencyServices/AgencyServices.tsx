@@ -12,7 +12,7 @@ const AgencyServices = () => {
   };
 
   return (
-    <div className={styles.agencyServices}>
+    <section className={styles.agencyServices}>
       <Typography variant="medium-title">{agencyServices?.title}</Typography>
       <div className={styles.content}>
         {agencyServices?.items?.map((service, index) => {
@@ -63,7 +63,7 @@ const AgencyServices = () => {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };
 

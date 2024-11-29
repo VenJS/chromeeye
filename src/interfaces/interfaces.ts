@@ -58,7 +58,7 @@ export interface CompanyData {
   email: string;
   logo: string;
   name: string;
-  socialMedia: SocialMedia;
+  social_media: SocialMedia;
   intro: string;
 }
 
@@ -85,7 +85,8 @@ export interface TypographyProps {
     | "small-title"
     | "description"
     | "small-description"
-    | "description-bold";
+    | "description-bold"
+    | "small-title-semi-bold";
   children: React.ReactNode;
   className?: string;
 }

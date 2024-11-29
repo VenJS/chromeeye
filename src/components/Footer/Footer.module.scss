@@ -1,0 +1,54 @@
+@import "../../styles/variables.scss";
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  padding: 86px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 68px;
+
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .menus {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      gap: 42px;
+      max-width: 418px;
+      min-width: 300px;
+
+      a,
+      span {
+        text-decoration: none;
+        color: $dark-gray;
+      }
+
+      .socials {
+        display: flex;
+        gap: 10px;
+      }
+
+      .contactInfo {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .addressWrapper {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}

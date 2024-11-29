@@ -13,5 +13,5 @@ export const useFetchData = () => {
       }, []);
     
 
-      return {headerMenus: data?.main_menu, hero: data?.hero, services: data?.services, portfolio: data?.portfolio, agencyServices: data?.agency_services, companyData: data?.company_data};
+      return {headerMenus: data?.main_menu, hero: data?.hero, services: data?.services, portfolio: data?.portfolio, agencyServices: data?.agency_services, companyData: data?.company_data, footer: data?.footer_menu};
 }

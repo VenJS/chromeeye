@@ -6,6 +6,7 @@ import Services from "@/components/Services/Services";
 import Portfolio from "@/components/Portfolio/Portfolio";
 import AgencyServices from "@/components/AgencyServices/AgencyServices";
 import GetStarted from '@/components/GetStarted/GetStarted';
+import Footer from "@/components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <Portfolio />
         <AgencyServices />
         <GetStarted />
+        <Footer />
     </div>
   );
 }

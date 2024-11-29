@@ -11,6 +11,10 @@
   .small-title {
     @include apply-font($font-section-small-title);
   }
+
+  .small-title-semi-bold {
+    @include apply-font($font-section-small-semi-bold-title);
+  }
   
   .description {
     @include apply-font($font-section-description);
