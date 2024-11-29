@@ -13,6 +13,12 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+
+    @media (max-width: 80rem) {
+      padding: 0 12px;
+      min-width: 430px;
+      box-sizing: border-box;
+    }
   }
 
   .links {

@@ -5,7 +5,7 @@ import { useFetchData } from "@/services/useFetchData";
 
 const AgencyServices = () => {
   const { agencyServices } = useFetchData();
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [openIndex, setOpenIndex] = useState<number | null>(2);
 
   const toggleAccordion = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);

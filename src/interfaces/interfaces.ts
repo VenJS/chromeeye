@@ -16,6 +16,7 @@ export interface Service {
   title: string;
   description: string;
   icon: string;
+  index: number
 }
 
 export interface Services {

@@ -9,6 +9,14 @@
   align-items: center;
   gap: 84px;
   min-height: 520px;
+  position: relative;
+
+  @media (max-width: 80rem) {
+    min-height: 910px;
+    padding: 48px 12px;
+    box-sizing: border-box;
+    min-width: 430px;
+  }
 
   > span:first-child {
     width: fit-content;
@@ -18,15 +26,23 @@
       content: "";
       position: absolute;
       bottom: 86px;
-      width: 100%;
+      min-width: 430px;
       height: 2px;
       background-color: $light-blue;
+      transform: translate(-50%, -50%);
+      left: 50%;
     }
   }
 
   .content {
     width: 100%;
     position: relative;
+
+    @media (max-width: 80rem) {
+      width: auto;
+      position: absolute;
+      bottom: 5%;
+    }
 
     .accordionItem {
       border-top: 1px solid $light-gray;
@@ -46,9 +62,23 @@
           right: 0;
           top: 0;
 
+          @media (max-width: 80rem) {
+            position: absolute;
+            left: 50%;
+            top: -50%;
+            transform: translate(-50%, -50%);
+            width: 370px;
+            height: 360px;
+          }
+
           img {
             width: 500px;
             height: 372px;
+
+            @media (max-width: 80rem) {
+              width: 370px;
+              height: 360px;
+            }
           }
         }
       }
