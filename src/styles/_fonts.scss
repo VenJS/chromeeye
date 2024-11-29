@@ -1,4 +1,13 @@
-$font-family-poppins: 'Poppins', sans-serif;
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.ttf') format('truetype'),
+    url('../fonts/Poppins-Medium.ttf') format('truetype'),
+    url('../fonts/Poppins-SemiBold.ttf') format('truetype'),
+    url('../fonts/Poppins-ExtraBold.ttf') format('truetype'),
+    url('../fonts/Poppins-Bold.ttf') format('truetype');
+  }
+
+$font-family-poppins: 'Poppins';
 
 $font-large-bold: (
   font-family: $font-family-poppins,
@@ -39,6 +48,19 @@ $font-small-bold: (
     font-family: $font-family-poppins,
     font-size: 20px,
     line-height: 30px,
+);
+
+$font-section-title: (
+    font-family: $font-family-poppins,
+    font-size: 44px,    
+    font-weight: 700,
+    line-height: 48px
+);
+
+$font-section-description: (
+    font-family: $font-family-poppins,
+    font-size: 18px,
+    line-height: 24px,
 );
 
 @mixin apply-font($font-map) {
