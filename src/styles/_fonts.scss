@@ -57,9 +57,29 @@ $font-section-title: (
     line-height: 48px
 );
 
+$font-section-medium-title: (
+    font-family: $font-family-poppins,
+    font-size: 38px,    
+    font-weight: 700,
+    line-height: 42px
+);
+
+$font-section-small-title: (
+    font-family: $font-family-poppins,
+    font-size: 24px,    
+    font-weight: 700,
+    line-height: 28px
+);
+
 $font-section-description: (
     font-family: $font-family-poppins,
     font-size: 18px,
+    line-height: 24px,
+);
+
+$font-section-small-description: (
+    font-family: $font-family-poppins,
+    font-size: 16px,
     line-height: 24px,
 );
 

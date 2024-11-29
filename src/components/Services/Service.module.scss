@@ -1,0 +1,50 @@
+@import "../../styles/variables.scss";
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+  width: 250px;
+  min-height: 275px;
+
+  .image {
+    img {
+      width: 65px;
+      height: 60px;
+      
+    }
+  }
+
+  .icon {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+      transition: transform 0.3s ease-in-out;
+
+    &.toggled {
+      transform: rotate(180deg);
+    }
+  }
+
+  .title {
+    @include apply-font($font-section-small-title);
+  }
+
+
+  .description {
+    @include apply-font($font-section-small-description);
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
+  }
+  
+  .description.toggled {
+    opacity: 1;
+    max-height: 72px; 
+  }
+
+
+}
