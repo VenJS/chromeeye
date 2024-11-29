@@ -41,33 +41,49 @@ export interface Portfolio {
 }
 
 export interface AgencyServices {
-    title: string;
-    items: Array<Omit<Hero, 'buttonLabel' | "buttonUrl">>;
+  title: string;
+  items: Array<Omit<Hero, "buttonLabel" | "buttonUrl">>;
 }
 
 export interface SocialMedia {
-    facebook: string;
-    instagram: string;
-    linkedin: string;
-    twitter: string;
+  facebook: string;
+  instagram: string;
+  linkedin: string;
+  twitter: string;
 }
 
 export interface CompanyData {
-    address: string;
-    phone: string;
-    email: string;
-    logo: string;
-    name: string;
-    socialMedia: SocialMedia
-    intro: string;
+  address: string;
+  phone: string;
+  email: string;
+  logo: string;
+  name: string;
+  socialMedia: SocialMedia;
+  intro: string;
 }
 
 export interface PageData {
-    main_menu: Array<MainMenu>;
-    hero: Hero;
-    services: Services;
-    portfolio: Portfolio;
-    agency_services: AgencyServices;
-    company_data: CompanyData;
-    footer_menu: Array<MainMenu>;
+  main_menu: Array<MainMenu>;
+  hero: Hero;
+  services: Services;
+  portfolio: Portfolio;
+  agency_services: AgencyServices;
+  company_data: CompanyData;
+  footer_menu: Array<MainMenu>;
+}
+
+export interface ButtonProps {
+  href?: string;
+  label?: string;
+}
+
+export interface TypographyProps {
+  variant:
+    | "title"
+    | "medium-title"
+    | "small-title"
+    | "description"
+    | "small-description";
+  children: React.ReactNode;
+  className?: string;
 }

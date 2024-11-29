@@ -4,14 +4,16 @@ import { useFetchData } from "@/services/useFetchData";
 import styles from "./Services.module.scss";
 import Service from "./Service";
 import Button from "../Button/Button";
+import { Typography } from "../Typography/Typography";
+
 
 const Services = () => {
   const { services } = useFetchData();
   return (
     <section className={styles.container}>
       <div className={styles.introduction}>
-        <span className={styles.title}>{`Our ${services?.title}`}</span>
-        <span className={styles.description}>{`Our ${services?.description}`}</span>
+        <Typography variant="medium-title">{`Our ${services?.title}`}</Typography>
+        <Typography variant="description">{`Our ${services?.description}`}</Typography>
       </div>
       <div className={styles.services}>{services?.items.map((service) => {
         return (

@@ -28,13 +28,8 @@
     }
   }
 
-  .title {
-    @include apply-font($font-section-small-title);
-  }
-
-
+  
   .description {
-    @include apply-font($font-section-small-description);
     opacity: 0;
     max-height: 0;
     overflow: hidden;

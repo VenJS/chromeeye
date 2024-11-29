@@ -1,0 +1,21 @@
+@import "../../styles/variables.scss";
+
+.title {
+    @include apply-font($font-section-title);
+  }
+  
+  .medium-title {
+    @include apply-font($font-section-medium-title);
+  }
+  
+  .small-title {
+    @include apply-font($font-section-small-title);
+  }
+  
+  .description {
+    @include apply-font($font-section-description);
+  }
+  
+  .small-description {
+    @include apply-font($font-section-small-description);
+  }

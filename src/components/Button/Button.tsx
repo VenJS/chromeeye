@@ -1,16 +1,14 @@
-import React from 'react'
+import React from "react";
 import Link from "next/link";
 import styles from "./Button.module.scss";
-
-interface ButtonProps {
- href?: string;
- label?: string;
-}
+import { ButtonProps } from "../../interfaces/interfaces";
 
 const Button = (props: ButtonProps) => {
   return (
-    <Link className={styles.button} href={props.href || '/'}>{props.label || ''}</Link>
-)
-}
+    <Link className={styles.button} href={props.href || "/"}>
+      {props.label || ""}
+    </Link>
+  );
+};
 
-export default Button
+export default Button;

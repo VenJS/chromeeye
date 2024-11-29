@@ -30,17 +30,11 @@
                 gap: 32px;
                 width: 45%;
 
-                .title {
-                    @include apply-font($font-section-title);
-                    margin: 0;
+                span:first-child {
                     max-width: 85%;
                 }
 
-                .description {
-                    @include apply-font($font-section-description);
-                }
-
-              
+            
             }
         }
     }
