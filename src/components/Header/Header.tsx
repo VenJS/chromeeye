@@ -4,13 +4,14 @@ import Link from "next/link";
 import styles from "./Header.module.scss";
 import { useFetchData } from "@/services/useFetchData";
 import { useIsMobile } from "@/hooks/useIsMobile";
+import HeaderMenu from "./HeaderMenu";
 
 const Header = () => {
   const [toggled, setToggled] = useState(false);
   const { headerMenus } = useFetchData();
   const isMobile = useIsMobile();
 
-  return (
+  return headerMenus && ( 
     <header className={styles.container}>
       <div className={styles.headerWrapper}>
         <img src="/chromeye_logo_v1.svg" alt="" />
@@ -39,6 +40,7 @@ const Header = () => {
           </div>
         )}
       </div>
+      {isMobile && toggled && (< HeaderMenu />)}
     </header>
   );
 };

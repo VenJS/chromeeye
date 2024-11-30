@@ -91,3 +91,8 @@ export interface TypographyProps {
   children: React.ReactNode;
   className?: string;
 }
+
+export interface DataContextType {
+    data: PageData | null;
+    loading: boolean;
+  }

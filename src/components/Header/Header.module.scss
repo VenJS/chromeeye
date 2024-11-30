@@ -7,6 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 
   .headerWrapper {
     display: flex;
@@ -25,13 +26,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @include apply-font($font-small-bold);
+    @include apply-font($font-small-semibold);
 
     a {
       text-decoration: none;
       text-transform: uppercase;
       color: $black;
       padding: 21px 28px;
+      font-weight: 500;
 
       &:last-child {
         background-color: $dark-gray;

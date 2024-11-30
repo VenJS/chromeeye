@@ -44,10 +44,11 @@ $font-medium-bold: (
   line-height: 75px
 );
 
-$font-small-bold: (
+$font-small-semibold: (
     font-family: $font-family-poppins,
     font-size: 20px,
     line-height: 30px,
+    font-weight: 500
 );
 
 $font-section-title: (

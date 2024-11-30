@@ -9,18 +9,20 @@ import { Typography } from "../Typography/Typography";
 const Services = () => {
   const { services } = useFetchData();
   return (
-    <section className={styles.container}>
-      <div className={styles.introduction}>
-        <Typography variant="medium-title">{`Our ${services?.title}`}</Typography>
-        <Typography variant="description">{`Our ${services?.description}`}</Typography>
-      </div>
-      <div className={styles.services}>
-        {services?.items.map((service, index) => {
-          return <Service {...service} key={service.title} index={index} />;
-        })}
-      </div>
-      <Button href={services?.buttonUrl} label={services?.buttonLabel} />
-    </section>
+    services && (
+      <section className={styles.container}>
+        <div className={styles.introduction}>
+          <Typography variant="medium-title">{`Our ${services?.title}`}</Typography>
+          <Typography variant="description">{`Our ${services?.description}`}</Typography>
+        </div>
+        <div className={styles.services}>
+          {services?.items.map((service, index) => {
+            return <Service {...service} key={service.title} index={index} />;
+          })}
+        </div>
+        <Button href={services?.buttonUrl} label={services?.buttonLabel} />
+      </section>
+    )
   );
 };
 

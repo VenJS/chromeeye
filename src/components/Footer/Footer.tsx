@@ -12,7 +12,7 @@ const Footer = () => {
 
   const leftColumn = sortedMenu?.slice(0, 4);
   const centeredColumn = sortedMenu?.slice(4);
-  return (
+  return footer && (
     <footer className={styles.container}>
       <div className={styles.heading}>
         <img src={companyData?.logo} alt="" />
